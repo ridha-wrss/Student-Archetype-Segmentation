@@ -7,7 +7,6 @@ def sidebar():
 
     st.markdown("""
         <style>
-        /* CSS Sidebar */
         [data-testid="stSidebarNav"] ul li a span {
             font-size: 1.1rem !important;
             font-weight: 600 !important;
@@ -35,12 +34,10 @@ def sidebar():
 def form():
     st.markdown("""
         <style>
-        /* Atur jarak otomatis (gap) biar gak bentrok antara horizontal dan vertikal */
         div[role="radiogroup"] {
             gap: 12px !important;
         }
 
-        /* Target kotaknya */
         div[role="radiogroup"] > label {
             border: 1.5px solid #E0E4E8 !important; 
             border-radius: 10px !important; 
@@ -54,7 +51,6 @@ def form():
             align-items: center;
         }
 
-        /* Efek saat mouse diarahkan ke kotak (Hover) */
         div[role="radiogroup"] > label:hover {
             border-color: #0133A1 !important; 
             background-color: #F0F4FA !important; 
@@ -66,7 +62,6 @@ def form():
 def tab():
     st.markdown("""
         <style>
-        /* Desain dasar untuk semua tab (Tidak Aktif) */
         button[role="tab"] {
             background-color: #FAFAFA !important;
             border-radius: 8px 8px 0 0 !important; /* Melengkung di atas, rata di bawah */
@@ -79,13 +74,11 @@ def tab():
             transition: all 0.3s ease !important;
         }
 
-        /* Efek saat mouse diarahkan ke tab (Hover) */
         button[role="tab"]:hover {
             background-color: #F0F4FA !important;
             color: #0133A1 !important;
         }
 
-        /* Desain Tab yang sedang AKTIF / Diklik */
         button[role="tab"][aria-selected="true"] {
             background-color: #0133A1 !important; /* Navy Blue VINIX7 */
             color: #FFFFFF !important; /* Teks Putih */
@@ -93,12 +86,10 @@ def tab():
             border-bottom: 4px solid #FFD13B !important; /* Garis bawah Gold */
         }
 
-        /* Menghilangkan garis indikator merah default bawaan Streamlit */
         div[data-baseweb="tab-highlight"] {
             display: none !important;
         }
 
-        /* Merapikan jarak isi konten di dalam tab agar tidak terlalu mepet */
         div[data-testid="stMarkdownContainer"] {
             padding-top: 10px;
         }
